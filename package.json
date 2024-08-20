@@ -1,0 +1,20 @@
+{
+  "name": "festivalmusica_inicio",
+  "version": "1.0.0",
+  "description": "Aprendiendo gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "CandeRabbia"
+  },
+  "keywords": [
+    "SASS",
+    "web",
+    "design"
+  ],
+  "author": "candela rabbia",
+  "license": "ISC"
+}

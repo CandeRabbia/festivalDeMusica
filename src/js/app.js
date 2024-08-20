@@ -60,7 +60,25 @@ function mostrarFoto(e){
 
 document.addEventListener('DOMContentLoaded', function(){
     scrollNav();
+
+    navegacionFija();
 });
+
+function navegacionFija(){
+
+    const barra = document.querySelector('.header');
+
+    const observer = new IntersectionObserver(function(entries){
+       if(entries[0].isIntersecting){
+            barra.classList.remove('fijo');
+       }
+       else {
+            barra.classList.add('fijo');
+       }
+    });
+
+    observer.observe(document.querySelector('.sobre-festival'));
+};
 
 function scrollNav(){
     const enlace = document.querySelectorAll('.navegacion-principal a');
